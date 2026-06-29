@@ -17,7 +17,7 @@ export default function SideBar() {
 
   return (
     <>
-      <aside className="fixed left-0 top-0 items-center justify-between h-screen w-12.5 bg-black/5 border-r border-black/10 backdrop-blur-lg hidden md:flex flex-col items py-7">
+      <aside className="fixed left-0 top-0 items-center justify-between h-screen w-12.5 bg-black/10 border-r border-black/15 backdrop-blur-lg hidden md:flex flex-col items py-7">
         <div className="flex flex-col gap-5">
           <div
             className="tooltip tooltip-right before:ml-3 after:ml-3"
