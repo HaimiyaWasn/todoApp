@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import SideBar from "../layouts/SideBar";
+import SideBar from "../layouts/SideBarFixed";
 import BackgroundImage from "@/public/img/backgroundImage/background1.webp";
 
 export default function TodoApp() {

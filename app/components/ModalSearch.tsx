@@ -39,35 +39,35 @@ export default function ModalSearch({ openModal, closeModal }: Props) {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`bg-white rounded-2xl border border-blue-600 w-full max-w-2xl mx-5 overflow-hidden transform transition-all duration-300 ${
+        className={`bg-neutral-800 rounded-2xl border-2 border-blue-600 w-full max-w-2xl mx-5 overflow-hidden transform transition-all duration-300 ${
           openModal
             ? "scale-100 translate-y-0 opacity-100"
             : "scale-95 translate-y-5 opacity-0"
         }`}
       >
         <div className="flex items-center gap-4 p-5">
-          <FaSearch size={20} className="text-black" />
+          <FaSearch size={20} className="text-white" />
           <input
             type="text"
             placeholder="Search"
-            className="flex-1 bg-transparent outline-none w-full text-black text-xl"
+            className="flex-1 bg-transparent outline-none w-full text-white text-xl"
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
           />
           <FaCircleXmark
             onClick={handleCloseModal}
             size={24}
-            className="text-zinc-600 hover:text-black cursor-pointer transition"
+            className="text-white hover:text-white/50 active:text-white/50 cursor-pointer transition"
           />
         </div>
 
-        <div className={`my-2 h-0.5 transition-colors duration-300 ${
+        <div className={`mb-2 h-0.5 transition-colors duration-300 ${
           isFocused
             ? "bg-blue-600"
             : "bg-zinc-700"
         }`} />
 
-        <div className="h-100 flex flex-col items-center justify-center text-black gap-7">
+        <div className="h-100 flex flex-col items-center justify-center text-white gap-7">
           <div className="text-8xl">🔍</div>
 
           <p className="font-bold text-lg">Enter the Keyword</p>

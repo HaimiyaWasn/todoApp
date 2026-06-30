@@ -11,7 +11,7 @@ import { FaGear } from "react-icons/fa6";
 
 import ModalSearch from "../components/ModalSearch";
 
-export default function SideBar() {
+export default function SideBarFixed() {
   const [activeMenu, setActiveMenu] = useState("task");
   const [openModalSearch, setOpenModalSearch] = useState(false);
 
