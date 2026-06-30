@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import SideBar from "../layouts/SideBarFixed";
+import SidebarLayout from "../layouts/SidebarLayout";
 import BackgroundImage from "@/public/img/backgroundImage/background1.webp";
 
 export default function TodoApp() {
@@ -27,7 +27,7 @@ export default function TodoApp() {
 
       <div className="absolute inset-0 bg-black/75" />
 
-      <SideBar/>
+      <SidebarLayout />
     </section>
   );
 }
