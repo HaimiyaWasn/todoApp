@@ -31,7 +31,7 @@ export default function ModalSearch({ openModal, closeModal }: Props) {
   return (
     <div
       onClick={handleCloseModal}
-      className={`fixed inset-0 z-10 flex items-center justify-center transition-all duration-300 ${
+      className={`fixed inset-0 z-20 flex items-center justify-center transition-all duration-300 ${
         openModal
           ? "bg-black/25 backdrop-blur-xs opacity-100 visible"
           : "bg-black/0 opacity-0 invisible"
