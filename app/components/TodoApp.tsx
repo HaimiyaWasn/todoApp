@@ -27,8 +27,8 @@ export default function TodoApp() {
 
   <SidebarLayout />
 
-  <main className="relative z-10 flex-1 left-92.5">
-    <header className="h-12 bg-black flex items-center px-6">
+  <main className="relative z-10 flex-1 md:left-92.5">
+    <header className="h-12 bg-black/25 backdrop-blur-lg flex items-center px-6 border-b-2 border-black/25">
       <h1>Welcome</h1>
     </header>
 
