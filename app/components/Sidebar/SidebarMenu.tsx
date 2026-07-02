@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "motion/react";
 import {
   FaCalendarDay,
   FaCalendarWeek,
@@ -15,7 +16,20 @@ export default function SideBarMenu() {
   const [openLists, setOpenLists] = useState(true);
 
   return (
-    <>
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: -25,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 0.5,
+        delay: 1.5,
+      }}
+    >
       <aside className="hidden md:flex flex-col fixed left-12.5 top-0 h-screen w-80 bg-black/25 border-r-2 border-black/30 backdrop-blur-lg">
         <div className="flex-1 overflow-y-auto px-5 py-7">
           <div className="space-y-2">
@@ -92,6 +106,6 @@ export default function SideBarMenu() {
           </div>
         </div>
       </aside>
-    </>
+    </motion.div>
   );
 }

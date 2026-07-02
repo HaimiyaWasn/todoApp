@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import {
   FaCheckSquare,
   FaQuestionCircle,
@@ -16,7 +17,20 @@ export default function SideBarFixed() {
   const [openModalSearch, setOpenModalSearch] = useState(false);
 
   return (
-    <>
+    <motion.div
+      initial={{
+        opacity: 0,
+        x: -25
+      }}
+      animate={{
+        opacity: 1,
+        x: 0,
+      }}
+      transition={{
+        duration: 0.5,
+        delay: 1,
+      }}
+    >
       <aside className="fixed left-0 top-0 items-center justify-between h-screen w-12.5 bg-black/25 border-r-2 border-black/30 backdrop-blur-lg hidden md:flex flex-col items py-7">
         <div className="flex flex-col gap-5">
           <div
@@ -89,6 +103,6 @@ export default function SideBarFixed() {
           setActiveMenu("task")
         }}
       />
-    </>
+    </motion.div>
   );
 }

@@ -20,7 +20,9 @@ export default function TodoApp() {
     alt="Background"
     fill
     priority
-    className="object-cover"
+    className={`object-cover transition-all duration-1500 ease-in-out ${
+      isMounted ? "blur-0 scale-100" : "blur-lg scale-105"
+    }`}
   />
 
   <div className="absolute inset-0 bg-black/75" />
